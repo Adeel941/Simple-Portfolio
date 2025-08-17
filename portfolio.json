@@ -1,0 +1,60 @@
+{
+  "profile": {
+    "name": "Adeel Zafar",
+    "title": "BS Computer Science Student | Associate Software Engineer",
+    "image": "prof.jpg"
+  },
+  "education": [
+    {
+      "degree": "BS Computer Science",
+      "institute": "Information Technology University, Punjab",
+      "duration": "Nov 2021 – May 2025",
+      "details": "Relevant Coursework: Web Development, App Development, Computer Networks, Information Security"
+    },
+    {
+        "degree": "Intermediate(Pre-Engineering)",
+      "institute": "Kabirian College Kabirwala",
+      "duration": "June 2019 – July 2021",
+      "details": ""
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer Intern",
+      "company": "Delta Labs",
+      "duration": "June 2024 – Present",
+      "description": "Worked with HTML, CSS, Tailwind, React.js, Next.js, Ruby on Rails."
+    },
+    { 
+      "role": "Software Engineer Intern",
+      "company": "Punjab Information Technology Board (PITB)",
+      "duration": "June 2023 – Aug 2023",
+      "description": "Developed mobile apps using Flutter, APIs, Firebase."
+    },
+    {
+      "role": "Teaching Assistant",
+      "company": "Information Technology University",
+      "duration": "Aug 2024 – Jan 2025",
+      "description": "Conducted lab sessions for Data Structures and guided students."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Hybrid-CS Learning Platform",
+      "description": "Web app bridging theory and industry needs. Built with Next.js, Tailwind, Ruby on Rails."
+    },
+    {
+      "name": "RetroKicks",
+      "description": "Flutter-based thrift shoe marketplace with role-based authentication."
+    },
+    {
+      "name": "MiniBnb",
+      "description": "Airbnb clone with React.js frontend and Node.js backend."
+    }
+  ],
+  "contact": {
+    "email": "bscs21008@itu.edu.pk",
+    "phone": "0300-2069845",
+    "github": "https://github.com/Adeel941"
+  }
+}
