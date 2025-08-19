@@ -26,8 +26,8 @@ header #profile {
 }
 header #profile img {
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
 }
 header nav {
   display: flex;
@@ -69,6 +69,17 @@ footer a {
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
 }
 
+.dark {
+  background-color: #0d1117;
+  color: white;
+}
+.dark .card {
+  background: #1f2937;
+}
+.dark section h2 {
+  color: white;
+}
+
 section {
   padding: 30px;
 }
@@ -89,6 +100,53 @@ section .card h3 {
 section .card p {
   color: white;
   font-size: 0.9rem;
+}
+
+#change {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: xx-large;
+  cursor: pointer;
+  z-index: 1000;
+}
+#change:hover {
+  opacity: 0.7;
+}
+
+#contact {
+  padding: 20px;
+  text-align: center;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+#contact form input,
+#contact form textarea {
+  padding: 8px;
+  border: 1px solid #cdc9c9;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+#contact form button {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+#contact pre {
+  margin-top: 15px;
+  text-align: left;
+  font-size: 0.85rem;
 }
 
 @media (max-width: 600px) {

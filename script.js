@@ -65,3 +65,8 @@ async function fetchData() {
 }
 
 fetchData();
+
+document.getElementById("change").addEventListener("click", ()=>{
+  document.body.classList.toggle("dark");
+})
+
