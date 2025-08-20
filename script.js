@@ -70,3 +70,12 @@ document.getElementById("change").addEventListener("click", ()=>{
   document.body.classList.toggle("dark");
 })
 
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+

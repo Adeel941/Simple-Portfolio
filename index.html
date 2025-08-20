@@ -14,14 +14,26 @@
     <header>
       <button id="change">🌙</button>
       <div id="profile"></div>
-      <nav>
+      <nav class="desktop-nav">
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
         <a href="#tools">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
+
+       <span class="hamburger" onclick="openNav()">&#9776;</span>
     </header>
+    <div id="myNav" class="menu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="menu-content">
+        <a href="#education" onclick="closeNav()">Education</a>
+        <a href="#experience" onclick="closeNav()">Experience</a>
+        <a href="#projects" onclick="closeNav()">Projects</a>
+        <a href="#tools" onclick="closeNav()">Skills</a>
+        <a href="#contact" onclick="closeNav()">Contact</a>
+      </div>
+    </div>
 
     <section id="education">
       <h2>Education</h2>
@@ -54,7 +66,7 @@
     </section>
 
     <footer id="contact">
-      <h2>Any Quries?</h2>
+      <h2>Any Queries?</h2>
       <form action="https://formspree.io/f/meozbjag" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
