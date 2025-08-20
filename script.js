@@ -4,7 +4,7 @@ async function fetchData() {
     const data = await response.json();
 
     document.getElementById("profile").innerHTML = `
-      <img src="${data.profile.image}" alt="Profile Picture" />
+      <img id= "mob-img" src="${data.profile.image}" alt="Profile Picture" />
         <h1>${data.profile.name}</h1>
         <p>${data.profile.title}</p>
     
@@ -28,7 +28,7 @@ async function fetchData() {
 
     data.experience.forEach((element) => {
       expContainer.innerHTML += `
-      <div class= "card">
+      <div id="exp">
         <h3>${element.role}</h3>
         <p><strong>${element.company}</strong> | ${element.duration}</p>
         <p>
@@ -42,11 +42,14 @@ async function fetchData() {
 
     data.projects.forEach((element) => {
       proContainer.innerHTML += `
-      <div class= "card">
-        <h3>${element.name}</h3>
-        <p>
-          ${element.description}
-        </p>
+      <div class= "project-card">
+        <img src="${element.image}" alt="${element.name}" />
+        <div class="project-info">
+          <h3>${element.name}</h3>
+          <p>
+            ${element.description}
+          </p>
+        <div/>
       </div>
       `;
     });

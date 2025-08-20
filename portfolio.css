@@ -31,7 +31,7 @@ header #profile img {
 }
 header nav {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 header nav a {
   color: white;
@@ -79,6 +79,16 @@ footer a {
 .dark section h2 {
   color: white;
 }
+.dark #exp {
+  border-left: 3px solid #fff;
+}
+.dark #exp .experience-item::before {
+  background: #fff;
+  border-color: #1f2937;
+}
+.dark #exp h3, .dark #exp p {
+  color: white;
+}
 
 section {
   padding: 30px;
@@ -101,6 +111,119 @@ section .card p {
   color: white;
   font-size: 0.9rem;
 }
+section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+section form input,
+section form textarea {
+  padding: 8px;
+  border: 3px solid #cdc9c9;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+section form button {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+#pro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: rgb(18, 77, 114);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 30%;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.project-card .project-info {
+  padding: 15px;
+}
+.project-card .project-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: rgb(255, 255, 255);
+}
+.project-card .project-info p {
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+  line-height: 1.4;
+}
+
+#img {
+  border-radius: 20%;
+  height: 330px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#abt {
+  display: flex;
+}
+#abt h3 {
+  padding: 30px 0px 30px 30px;
+}
+#abt p {
+  padding-left: 30px;
+  padding-top: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#exp {
+  position: relative;
+  margin: 20px auto;
+  padding-left: 30px;
+  border-left: 3px solid rgb(18, 77, 114);
+}
+#exp .experience-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+#exp .experience-item h3 {
+  color: #110701;
+  font-size: 1.1rem;
+}
+#exp .experience-item p {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+#exp-gif {
+  width: 35%;
+  height: 400px;
+}
+
+#exp-content {
+  display: flex;
+}
 
 #change {
   position: fixed;
@@ -116,37 +239,13 @@ section .card p {
   opacity: 0.7;
 }
 
+#mob-img {
+  display: none;
+}
+
 #contact {
   padding: 20px;
   text-align: center;
-}
-#contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 350px;
-  margin: 0 auto;
-}
-#contact form input,
-#contact form textarea {
-  padding: 8px;
-  border: 1px solid #cdc9c9;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-#contact form button {
-  padding: 8px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 4px;
-  background: #333;
-  color: white;
-  cursor: pointer;
-}
-#contact pre {
-  margin-top: 15px;
-  text-align: left;
-  font-size: 0.85rem;
 }
 
 .menu {
@@ -198,6 +297,12 @@ section .card p {
     align-self: flex-end;
     margin-left: 170px;
   }
+  #img {
+    display: none;
+  }
+  #mob-img {
+    display: block;
+  }
 }
 @media (max-width: 767px) {
   nav.desktop-nav {
@@ -230,6 +335,37 @@ section .card p {
   }
   .tool img {
     width: 60px;
+  }
+  #pro {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .project-card {
+    width: 90%;
+  }
+  .project-card img {
+    height: 140px;
+  }
+  #img {
+    display: none;
+  }
+  #mob-img {
+    display: block;
+  }
+  #abt {
+    display: flex;
+    padding-left: 0%;
+  }
+  #abt h3 {
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  #abt p {
+    padding: 10px;
+  }
+  #exp-gif {
+    display: none;
   }
 }
 

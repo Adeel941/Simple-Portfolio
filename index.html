@@ -15,6 +15,7 @@
       <button id="change">🌙</button>
       <div id="profile"></div>
       <nav class="desktop-nav">
+        <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
@@ -27,6 +28,7 @@
     <div id="myNav" class="menu">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="menu-content">
+        <a href="#about" onclick="closeNav()">About</a>
         <a href="#education" onclick="closeNav()">Education</a>
         <a href="#experience" onclick="closeNav()">Experience</a>
         <a href="#projects" onclick="closeNav()">Projects</a>
@@ -35,6 +37,24 @@
       </div>
     </div>
 
+    <section id="about">
+
+     <div id="abt">
+      <img id="img" src="prof.jpg" alt="Profile Picture" />
+      <div>
+        <h3>A Bit About Me</h3>
+        <p>Hi, I’m Adeel Zafar, a passionate Computer Science student at Information Technology University, Lahore. I enjoy building modern, user-friendly web and mobile applications. With experience as a Software Engineer Intern at Delta Labs and PITB, I’ve worked on technologies like React.js, Next.js, Flutter, Tailwind CSS, Ruby on Rails, and Firebase.
+        </p>
+        <p>
+         I love exploring how technology can solve real-world problems; whether it’s creating a mobile marketplace, building web platforms, or experimenting with VR games. I also have experience mentoring students as a Teaching Assistant, which strengthened my own understanding while helping others grow.
+        </p>
+        <p>
+          Currently, I’m focused on improving my full-stack development skills and contributing to impactful projects.
+        </p>
+      </div>
+     </div>
+    </section>
+
     <section id="education">
       <h2>Education</h2>
       <div id="edu"></div>
@@ -42,7 +62,11 @@
 
     <section id="experience">
       <h2>Experience</h2>
-      <div id="exp"></div>
+      <div id="exp-content">
+        <div id="exp"></div>
+        <img src="dev.gif" alt="Developer GIF" id="exp-gif" />
+      </div>
+
     </section>
 
     <section id="projects">
@@ -65,7 +89,7 @@
       </div>
     </section>
 
-    <footer id="contact">
+    <section>
       <h2>Any Queries?</h2>
       <form action="https://formspree.io/f/meozbjag" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
@@ -73,7 +97,9 @@
         <textarea name="message" placeholder="Your Message"></textarea>
         <button type="submit">Send</button>
       </form>
+    </section>
 
+    <footer id="contact">
       <h2>Contact</h2>
       <div id="fot"></div>
     </footer>

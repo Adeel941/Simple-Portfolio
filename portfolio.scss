@@ -38,7 +38,7 @@ header {
 
   nav {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 
     a {
       color: white;
@@ -92,6 +92,16 @@ footer {
       color: white;
     }
   }
+  #exp {
+    border-left: 3px solid #fff;
+    .experience-item::before {
+      background: #fff;
+      border-color: #1f2937;
+    }
+    h3, p {
+      color: white;
+    }
+  }
 }
 
 
@@ -119,6 +129,123 @@ section {
       font-size: 0.9rem;
     }
   }
+    form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    margin: 0 auto;
+
+    input,
+    textarea {
+      padding: 8px;
+      border: 3px solid #cdc9c9;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    button {
+      padding: 8px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 4px;
+      background: #333;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+#pro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin-top: 20px;
+}
+
+.project-card {
+  background:$card-bg;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 30%; 
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .project-info {
+    padding: 15px;
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: $secondary-color;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color:$secondary-color;
+      line-height: 1.4;
+    }
+  }
+}
+
+#img{
+  border-radius: 20%;
+  height: 330px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+}
+#abt{
+  display: flex;
+  h3{
+    padding:30px 0px 30px 30px;
+  }
+  p{
+     padding-left: 30px;
+     padding-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+}
+#exp {
+  position: relative;
+  margin: 20px auto;
+  padding-left: 30px;
+  border-left: 3px solid $card-bg;
+
+  .experience-item {
+    position: relative;
+    margin-bottom: 25px;
+    h3 {
+      color: $primary-color;
+      font-size: 1.1rem;
+    }
+    p {
+      color: #444;
+      font-size: 0.9rem;
+    }
+  }
+}
+#exp-gif{
+  width: 35%;
+  height: 400px;
+}
+#exp-content{
+  display: flex;
 }
 
 #change {
@@ -136,42 +263,12 @@ section {
   }
 }
 
-
+#mob-img{
+  display: none;
+}
 #contact {
   padding: 20px;
   text-align: center;
-
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 350px;
-    margin: 0 auto;
-
-    input,
-    textarea {
-      padding: 8px;
-      border: 1px solid #cdc9c9;
-      border-radius: 4px;
-      font-size: 0.9rem;
-    }
-
-    button {
-      padding: 8px;
-      margin-bottom: 15px;
-      border: none;
-      border-radius: 4px;
-      background: #333;
-      color: white;
-      cursor: pointer;
-    }
-  }
-
-  pre {
-    margin-top: 15px;
-    text-align: left;
-    font-size: 0.85rem;
-  }
 }
 .menu {
   height: 100%;
@@ -225,6 +322,12 @@ section {
   align-self: flex-end;
   margin-left: 170px
  };
+   #img{
+    display: none;
+  }
+  #mob-img{
+  display:block;
+  }
 }
 
 @media (max-width: 767px) {
@@ -262,5 +365,37 @@ section {
     img {
       width: 60px;   
     }
+  }
+    #pro {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 90%;
+    img{
+      height: 140px;
+    }
+  }
+  #img{
+    display: none;
+  }
+  #mob-img{
+  display:block;
+  }
+  #abt{
+  display: flex;
+    padding-left: 0%;
+  h3{
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  p{
+    padding: 10px;
+  }
+  }
+  #exp-gif{
+    display: none;
   }
 }

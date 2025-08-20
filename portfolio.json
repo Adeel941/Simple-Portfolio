@@ -41,15 +41,18 @@
   "projects": [
     {
       "name": "Hybrid-CS Learning Platform",
-      "description": "Web app bridging theory and industry needs. Built with Next.js, Tailwind, Ruby on Rails."
+      "description": "Web app bridging theory and industry needs. Built with Next.js, Tailwind, Ruby on Rails.",
+      "image": "project.jpg"
     },
     {
       "name": "RetroKicks",
-      "description": "Flutter-based thrift shoe marketplace with role-based authentication."
+      "description": "Flutter-based thrift shoe marketplace with role-based authentication.",
+      "image": "project.jpg"
     },
     {
       "name": "MiniBnb",
-      "description": "Airbnb clone with React.js frontend and Node.js backend."
+      "description": "Airbnb clone with React.js frontend and Node.js backend.",
+      "image": "project.jpg"
     }
   ],
   "contact": {
