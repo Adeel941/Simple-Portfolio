@@ -45,7 +45,11 @@ async function fetchData() {
       <div class= "project-card">
         <img src="${element.image}" alt="${element.name}" />
         <div class="project-info">
-          <h3>${element.name}</h3>
+          <h3>${element.name}
+            <a href="${element.github}" target="_blank">
+              <i class="devicon-github-original"></i>
+            </a>
+          </h3>
           <p>
             ${element.description}
           </p>
